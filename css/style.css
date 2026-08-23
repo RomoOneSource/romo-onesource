@@ -493,6 +493,7 @@ form.contact-form { display: grid; gap: 18px; background: var(--white); padding:
 @media (max-width: 860px) {
   .contact-layout { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
+  form.contact-form { max-width: 560px; margin: 0 auto; }
 }
 
 /* ==========================================================================
