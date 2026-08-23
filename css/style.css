@@ -512,6 +512,42 @@ form.contact-form { display: grid; gap: 18px; background: var(--white); padding:
   max-width: 60ch;
 }
 
+.badge-veteran {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.badge-veteran svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+.badge-veteran.on-dark {
+  border: 1px solid rgba(228, 198, 133, 0.4);
+  color: var(--brass-light);
+  background: rgba(228, 198, 133, 0.08);
+}
+.badge-veteran.on-light {
+  border: 1px solid rgba(156, 120, 48, 0.35);
+  color: var(--brass-deep);
+  background: rgba(201, 161, 92, 0.08);
+}
+
+.footer-bottom-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(228, 198, 133, 0.85);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.82rem;
+}
+.footer-bottom-badge svg { width: 13px; height: 13px; }
+
 /* Utility */
 .mt-0 { margin-top: 0; }
 .stack { display: grid; gap: 18px; }
