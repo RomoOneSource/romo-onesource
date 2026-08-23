@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Romo OneSource</title>
-<meta name="description" content="Romo OneSource simplifies residential and commercial projects with a single point of contact and a trusted network of licensed professionals.">
+<title>Contact | Romo OneSource</title>
+<meta name="description" content="Reach out to Romo OneSource. Call, email, or send a message and we'll get back to you to evaluate your project.">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +22,8 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
     <div class="header-actions">
@@ -38,52 +38,73 @@
 
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow on-dark">About Romo OneSource</span>
-    <h1>Getting projects done shouldn't be a project of its own.</h1>
-    <span class="badge-veteran on-dark" style="margin-top: 18px;">
-      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 1.5l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 15.6l-5.6 3 1.4-6.3-4.8-4.3 6.4-.6L12 1.5z"/></svg>
-      Veteran-Owned &amp; Operated
-    </span>
+    <span class="eyebrow on-dark">Contact</span>
+    <h1>Let's get your project handled.</h1>
+    <p class="lede">Tell us what you're working on. We'll follow up to evaluate the project and recommend next steps — no obligation.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="about-block">
-      <p class="lede" style="font-size: 1.15rem; color: var(--ink);">Romo OneSource is a professional project consulting and coordination company that simplifies the process of getting residential and commercial projects completed.</p>
-      <p>We provide customers with a single point of contact for projects ranging from home improvements and repairs to property maintenance, installations, and specialized services. Rather than making customers search for multiple companies, compare contractors, coordinate schedules, and manage different aspects of a project themselves, Romo OneSource brings the right professionals together under one streamlined experience.</p>
+  <div class="container contact-layout">
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <span class="label">Phone</span>
+        <span class="value"><a href="tel:14243857112">(424) 385-7112</a></span>
+      </div>
+      <div class="contact-info-item">
+        <span class="label">Email</span>
+        <span class="value"><a href="mailto:RomoOneSource@gmail.com">RomoOneSource@gmail.com</a></span>
+      </div>
+      <div class="contact-info-item">
+        <span class="label">Service Area</span>
+        <span class="value">Los Angeles County &amp; Surrounding Areas</span>
+      </div>
+      <div class="contact-info-item">
+        <span class="label">Response Time</span>
+        <span class="value">We typically respond within one business day.</span>
+      </div>
     </div>
 
-    <blockquote class="pull-quote">
-      Our goal is simple: make getting projects done easier, more organized, and more reliable.
-    </blockquote>
-
-    <div class="about-block">
-      <h2 style="margin-bottom: 8px;">How we work</h2>
-      <p>We begin by meeting with the customer, understanding their needs, evaluating the project, and recommending the best solution based on their goals and budget. From there, Romo OneSource coordinates with a trusted network of qualified, licensed, certified, and experienced service professionals to complete the work.</p>
-      <p>You get one relationship to manage — one call for scheduling, one call for updates, one call when the project is done.</p>
-      <p>Romo OneSource is proudly veteran-owned and operated, built on the same discipline and reliability that comes with military service.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Where We Work</span>
-      <h2>Los Angeles County &amp; surrounding areas.</h2>
-      <p class="lede">Residential and commercial projects, coordinated locally.</p>
-    </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container cta-band-inner">
-    <div>
-      <h2>Let's talk about your project.</h2>
-      <p>We'll evaluate it and recommend the right path forward.</p>
-    </div>
-    <a class="btn btn-ink" href="contact.html">Start Your Project</a>
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mgawbnre" method="POST">
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="project-type">Project type</label>
+        <select id="project-type" name="project_type">
+          <option value="Home Improvements & Repairs">Home Improvements &amp; Repairs</option>
+          <option value="Property Maintenance">Property Maintenance</option>
+          <option value="Installations">Installations</option>
+          <option value="Specialized Services">Specialized Services</option>
+          <option value="Not Sure">Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Tell us about your project</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New project inquiry — Romo OneSource website">
+      <button type="submit" class="btn btn-brass" id="contact-submit-btn">Send Message</button>
+      <p class="form-note">By submitting, you agree to be contacted about your project.</p>
+      <div id="form-success" class="form-status form-status-success" role="status" hidden>
+        Thanks — your message has been sent. We'll be in touch within one business day.
+      </div>
+      <div id="form-error" class="form-status form-status-error" role="alert" hidden>
+        Something went wrong sending your message. Please try again, or email us directly at
+        <a href="mailto:RomoOneSource@gmail.com">RomoOneSource@gmail.com</a>.
+      </div>
+    </form>
   </div>
 </section>
 
