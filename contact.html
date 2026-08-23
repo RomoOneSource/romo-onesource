@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mgawbnre" method="POST">
       <div class="form-row">
         <div class="field">
           <label for="name">Full name</label>
@@ -95,8 +95,15 @@
         <textarea id="message" name="message" required></textarea>
       </div>
       <input type="hidden" name="_subject" value="New project inquiry — Romo OneSource website">
-      <button type="submit" class="btn btn-brass">Send Message</button>
+      <button type="submit" class="btn btn-brass" id="contact-submit-btn">Send Message</button>
       <p class="form-note">By submitting, you agree to be contacted about your project.</p>
+      <div id="form-success" class="form-status form-status-success" role="status" hidden>
+        Thanks — your message has been sent. We'll be in touch within one business day.
+      </div>
+      <div id="form-error" class="form-status form-status-error" role="alert" hidden>
+        Something went wrong sending your message. Please try again, or email us directly at
+        <a href="mailto:RomoOneSource@gmail.com">RomoOneSource@gmail.com</a>.
+      </div>
     </form>
   </div>
 </section>
