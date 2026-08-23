@@ -467,6 +467,22 @@ form.contact-form { display: grid; gap: 18px; background: var(--white); padding:
 .field textarea { resize: vertical; min-height: 120px; }
 .form-note { font-size: 0.82rem; color: var(--ink-soft); }
 
+.form-status {
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.form-status-success {
+  background: rgba(120, 160, 110, 0.15);
+  color: #3E6B34;
+}
+.form-status-error {
+  background: rgba(190, 70, 60, 0.1);
+  color: #A03A2E;
+}
+.form-status-error a { text-decoration: underline; }
+
 @media (max-width: 860px) {
   .contact-layout { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
